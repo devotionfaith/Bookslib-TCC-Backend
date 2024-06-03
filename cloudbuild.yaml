@@ -13,6 +13,8 @@ steps:
         'book-backend',
         '--image',
         'gcr.io/$PROJECT_ID/book-backend',
+        '--port',
+        '8080',
         '--region',
         'asia-southeast2',
         '--platform',
