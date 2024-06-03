@@ -13,8 +13,6 @@ steps:
         'booklibs-backend',
         '--image',
         'gcr.io/$PROJECT_ID/booklibs-backend',
-        '--port',
-        '5000',
         '--region',
         'asia-southeast2',
         '--platform',
