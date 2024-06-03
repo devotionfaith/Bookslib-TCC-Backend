@@ -1,0 +1,67 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJuYW1lIjoiR3VzdGlpaWlpIiwiZW1haWwiOiJpbmllbWxhQGdtYWlsLmNvbSIsImlhdCI6MTcxNzM0OTA0NiwiZXhwIjoxNzE3MzQ5MDc2fQ.Ad7lxdXrcTbUFGUpLssH5pqjWNgY-8CvFM2gGvDiw0s
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json 
+
+{
+    "name": "Gustiiiii",
+    "email" : "iniemla@gmail.com",
+    "password": "12345",
+    "confPassword": "12345"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json 
+
+{
+    "email" : "iniemla@gmail.com",
+    "password": "12345"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE  http://localhost:5000/logout
+
+###
+GET http://localhost:5000/books
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEzLCJuYW1lIjoiR3VzdGlpaWlpIiwiZW1haWwiOiJpbmllbWxhQGdtYWlsLmNvbSIsImlhdCI6MTcxNzQxMDUzMCwiZXhwIjoxNzE3NDE0MTMwfQ.ZWiWT2eQVOGzEoNxwD5VZxdqW1C8qlBMel0Sjw7OT1A
+
+###
+GET http://localhost:5000/books/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJuYW1lIjoiR3VzdGlpaWlpIiwiZW1haWwiOiJpbmllbWxhQGdtYWlsLmNvbSIsImlhdCI6MTcxNzM1NDQ3MywiZXhwIjoxNzE3MzU4MDczfQ.rf1ERL34wXyQoOr3DUMop43-eKs-r8EhB8KHlDbA-NY
+
+###
+
+POST http://localhost:5000/books
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEzLCJuYW1lIjoiR3VzdGlpaWlpIiwiZW1haWwiOiJpbmllbWxhQGdtYWlsLmNvbSIsImlhdCI6MTcxNzQxMDUzMCwiZXhwIjoxNzE3NDE0MTMwfQ.ZWiWT2eQVOGzEoNxwD5VZxdqW1C8qlBMel0Sjw7OT1A
+Content-Type: application/json
+
+{
+    "judul": "asaasa",
+    "pengarang": "Doei",
+    "img_url": "https://gradienmediatama.com/download-cover/ELEGI_RENJANA.jpg",
+    "stok": 1
+}
+
+
+###
+PUT http://localhost:5000/books/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEzLCJuYW1lIjoiR3VzdGlpaWlpIiwiZW1haWwiOiJpbmllbWxhQGdtYWlsLmNvbSIsImlhdCI6MTcxNzQxMDUzMCwiZXhwIjoxNzE3NDE0MTMwfQ.ZWiWT2eQVOGzEoNxwD5VZxdqW1C8qlBMel0Sjw7OT1A
+Content-Type: application/json
+
+{
+    "judul": "gusti",
+    "pengarang": "Doei",
+    "tahun_terbit": "2007",
+    "stok": 1
+}
+
+###
+DELETE  http://localhost:5000/books/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJuYW1lIjoiR3VzdGlpaWlpIiwiZW1haWwiOiJpbmllbWxhQGdtYWlsLmNvbSIsImlhdCI6MTcxNzM1NDQ3MywiZXhwIjoxNzE3MzU4MDczfQ.rf1ERL34wXyQoOr3DUMop43-eKs-r8EhB8KHlDbA-NY
