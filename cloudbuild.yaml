@@ -2,7 +2,7 @@ steps:
   - name: "gcr.io/cloud-builders/gsutil"
     args: ["cp", "${_ENV}", ".env"]
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/book-backend', '.']
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/book-backend: --port 5000', '.']
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/$PROJECT_ID/book-backend']
   - name: 'gcr.io/cloud-builders/gcloud'
