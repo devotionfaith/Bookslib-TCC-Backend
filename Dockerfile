@@ -1,6 +1,7 @@
 FROM node:18-alpine
 WORKDIR /app
 COPY . .
+ENV 8080
 RUN npm install
 EXPOSE 8080
 CMD [ "npm", "run", "start-dev"]
