@@ -47,7 +47,7 @@ export const AddBook = async(req, res) => {
             });
             if (!user[0]) return res.sendStatus(403);
             await Books.create({
-                id_user: user[0].id,
+                user_id: user[0].id,
                 judul: judul,
                 pengarang: pengarang,
                 img_url: img_url,

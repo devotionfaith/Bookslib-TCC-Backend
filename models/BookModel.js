@@ -5,7 +5,8 @@ const { DataTypes } = Sequelize;
 
 const Books = db.define('books',{
     id_user:{
-        type: DataTypes.INTEGER
+        type: DataTypes.INTEGER,
+        defaultValue: 0
     },
     judul:{
         type: DataTypes.STRING

@@ -5,4 +5,9 @@ const db = new Sequelize( "bookslibs-db", 'root' ,'Kiki12345&',{
     dialect: "mysql"
 });
 
+// const db = new Sequelize( "project_tcc", 'root' ,'',{
+//     host: "localhost",
+//     dialect: "mysql"
+// });
+
 export default db;
